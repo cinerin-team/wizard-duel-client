@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Rajzoló felület -->
+    <com.example.wizard_duel_client.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#FFFFFF" />
+
+    <!-- Adatbeviteli mezők -->
+    <EditText
+        android:id="@+id/spellNameInput"
+        android:hint="Varázslat neve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/magicCostInput"
+        android:hint="Varázserő költsége"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/damageInput"
+        android:hint="Sebzés értéke"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Gombok -->
+    <Button
+        android:id="@+id/saveButton"
+        android:text="Mentés"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:text="Törlés"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
